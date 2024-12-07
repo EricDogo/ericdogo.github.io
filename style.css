@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Comandos gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+/* ALUNO: Eric Alexandre Lopes Dogo
+    RU: 4945832 */
+
+
+    /* Estilizando HEADER */
+header {
+    width: 100%;
+    height: 84px;
+    background: rgba(0, 0, 0, 0.774);
+    display : flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 99;
+}
+
+/* desabilitando menu de mobile */
+header .menu-mobile ul{ 
+    display: none;
+}
+
+header .btn-mobile{
+    display: none;
+}
+
+header .logo { /* estilizando LOGO */
+    width: 60%;
+    display:flex;
+}
+
+header .logo img{
+    width: 71px;
+    margin-left: 5px;
+}
+
+header .divi ul{ /* Estilizando menu */
+    color: #41fc41d8;
+    text-align: left;
+    margin-top: 28px;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 1.15rem;
+    text-shadow: 0px 0px 0px 5px #fff;
+}
+
+header .menu ul{
+    display: flex;
+}
+
+header .menu ul li {
+    padding: 0 20px;
+    list-style: none;
+}
+
+header .menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: 0.5s ease;
+    font-size: 1rem;
+}
+
+header .menu ul li a:hover {
+    color: #41fc41d8;
+    text-decoration: underline;
+    text-shadow: #fff;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+/*===== Sobre =====*/
+
+#sobre .container{ /* estilizando fundo da primeira tela */
+    width: 100%;
+    height: 100vh;
+    background: url(image/used/v_matrix.jpg);
+    background-size: cover;
+    box-shadow: 0 0 10px 0 rgba(1, 5, 8, 0.5);
+    transition: 0.4s ease;
+}
+
+#sobre .container .icons{ /* estilizando ícones */
+    width: 10%;
+    height: 55vh;
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    background-color: #000000af;
+    border-radius: 60px;
+    margin-left: 15px;
+}
+
+#sobre .container .icons ion-icon{
+    padding:30px 0;
+    font-size: 2rem;
+    color: #ffffff;
+    transition: 0.5s ease;
+}
+
+#sobre .container .icons ion-icon:hover{
+    color: #fafafa;
+    box-shadow: 0px 0px 8px #ffffffb7;
+    background-color: #000000c2;
+    height: 19px;
+    border-radius: 20px;
+}
+
+#sobre .container .title{
+    width: 100%;
+    height: 80vh;
+    display: flex;     
+    padding: 0 60px;    
+}
+
+#sobre .container .title .caixa{ /* estilizando texto */
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.815);
+    background-color: #000000d5;
+    position: relative;
+    width: 70%;
+    height: 500px;
+    margin-top: 130px;
+    margin-left: 70px;    
+    text-align: center; 
+    border: 4px solid #1ff342;
+    border-radius: 50px;
+    overflow: auto
+}
+
+#sobre .container .title h1{
+    color:#41fc41d8;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    margin-top: 15px;
+       
+}
+
+#sobre .container .title h2{
+    color: #ffffff;    
+    letter-spacing: 1px;
+    font-size: 6px;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-decoration: none; 
+    text-align: justify;
+    text-shadow: #000000;  
+}
+
+#sobre .container .title .foto{ /* Estilizando FOTO */
+    width: 270px;
+    height:278px;
+    margin-top: 230px;
+    margin-left: 160px;
+    background-color: #000000a9;
+    border: 4px solid #1ff342;
+    border-radius: 12px;
+}
+
+/*===== Formação =====*/
+
+#formacao .container { /* Estilizando Fundo da tela de Formações */
+    width: 100%;
+    height: 100vh;
+    background: url(image/used/eye-matrix.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px 0 rgba(1, 5, 8, 0.5);
+    transition: 0.4s ease;
+}
+
+#formacao .container .title{
+    width: 75%;
+    height: 80vh;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 60px;
+    margin-left: 200px;
+    background-color: #000000b2;  
+    border-radius: 20%;
+    overflow: auto
+}
+
+#formacao .container .title ul li, p{ /* Estilizando Escritas */
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+#formacao .container .title p{
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 19px;
+    margin-bottom: 10px;
+}
+
+#formacao .container .title h1{
+    color:#d6ec10;
+    text-transform: uppercase;
+    font-size: 1.50rem;
+    text-align: left;
+    margin-top: 19px;
+    margin-bottom: 10px;
+}
+
+/*===== portfolio =====*/
+
+#port .container{ /* Estilizano Fundo da tela de portifólio */
+    width:100%;
+    height:100vh;
+    background: url(image/used/blue_hack.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 50px 0 rgb(1, 5, 8);
+    transition: 0.4s ease;
+}
+
+#port .container input[type=radio]{
+    display: none;
+}
+
+#port .container .card{ /* Estilizando áreas com imagens e vídeos */
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    left: 0;
+    right: 0;
+    margin: 110px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 0 0 10px 0 rgb(255, 255, 255);
+    transition: 0.4s ease;
+    cursor: pointer;
+    border-radius: 10px;
+    text-shadow: 0 0 15px rgb(2, 0, 0);
+}
+
+#port .container .card img, video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#port .container .desc{ /* Estilizando caixa de descrição */
+    width: 240px;
+    height: 180px;
+    position: relative;
+    margin-right: 20px;    
+    left: 665px;
+    top: -300px;
+    background-color: #000000bd;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#port .container .desc p{
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+#port .container .cards{ /* estilizando troca de imagens */
+    position: relative;
+    width: 100%;
+    height:100%;
+}
+
+#item-1:checked ~ .cards #song-3,
+#item-2:checked ~ .cards #song-1,
+#item-3:checked ~ .cards #song-2{
+    transform: translateX(-40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-2,
+#item-2:checked ~ .cards #song-3,
+#item-3:checked ~ .cards #song-1{
+    transform: translateX(40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-1,
+#item-2:checked ~ .cards #song-2,
+#item-3:checked ~ .cards #song-3{
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
+/*===== contato =====*/
+
+#cont .container{ /* Estilizando tela de Contato */
+    width:100%;
+    height:100vh;
+    background: url(image/used/matrix_azul.gif);
+    background-size: auto;
+    box-shadow: 0 0 50px 0 rgb(0, 0, 0);
+    transition: 0.4s ease;
+}
+
+#cont .container .content-contact{
+    width:80%;
+    height: 60vh;
+    margin: 0 auto;
+    padding: 200px 0;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#cont .content-contact .contact-left{ /* Estilizando informações da esquerda */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    background-color: #000000a8;
+    border-radius: 7%;
+    margin-left: 50px;
+    margin-top: -15px;
+    align-items: center;
+}
+
+#cont .content-contact .contact-left h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: rgb(209, 245, 48);
+    margin-top: 8px;
+    
+}
+
+#cont .content-contact .contact-left .linha{
+    width: 245px;
+    height: 3px;
+    background: rgb(209, 245, 48);
+    margin-top: 5px;
+    margin-bottom: 17.5px;
+    
+}
+
+#cont .content-contact .contact-left ion-icon{
+    font-size: 1.5rem;
+    padding: 5px 0;
+    
+}
+#cont .content-contact .contact-left span{
+    font-size: 1rem;
+    padding: 5px 0;
+    margin-bottom: 15px;
+    
+}
+
+#cont .content-contact .contact-right{ /* estilizando lado direito */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    background-color: #000000a8;
+    border-radius: 7%;
+    margin-left: 50px;
+    margin-top: -50px;
+    align-items: center;
+}
+
+#cont .content-contact .contact-right h1{
+    font-size: 2rem;
+    text-transform: uppercase;    
+    color: rgb(209, 245, 48);
+    margin-top: 8px;    
+}
+
+#cont .content-contact .contact-right .linha{
+    width: 80%;
+    height: 3px;
+    background: rgb(209, 245, 48);
+    margin-top: 5px;
+    margin-bottom: 17.5px;    
+}
+
+/* estilizando campos nome, email, mensagem e botão de enviar */
+
+#cont .content-contact .contact-right input[type=email],
+#cont .content-contact .contact-right input[type=text]{
+    width: 80%;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 20px;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    margin-left: 10%;
+}
+
+#cont .content-contact .contact-right textarea{
+    width: 80%;
+    height:120px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    padding: 15px 20px;
+    margin-left: 10%;
+}
+
+#cont .content-contact .contact-right button{
+    padding: 7px 20px;
+    border-radius: 170px;
+    border: none;
+    color: #ffffff;
+    background: rgba(21,111,195,0.5);
+    text-transform: uppercase;    
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 45%;
+    margin-bottom: 20px;
+}
+
+/*===== footer =====*/
+
+footer{ /* estilizando footer */
+    width: 100%;
+    height: 50px;
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 50px;
+    text-align: center;
+    background: rgba(16, 1, 56, 0.5);
+    position:relative;
+    top: -50px;
+}
+
+footer a{
+    color: rgb(209, 245, 48);
+}
+
+/*===== responsivo =====*/
+
+@media screen and (max-width: 1380px){
+
+    /* header */
+    header .divi ul{
+        font-size: 1.1rem;
+    }
+
+    header .menu-mobile ul{
+        display: none;
+    }
+    
+    header .btn-mobile{
+        display: none;
+    }
+
+    /* sobre */
+
+    #sobre .container .icons ion-icon{
+        font-size: 1.55rem;        
+    }
+
+    #sobre .container .title h1{
+        font-size: 1.45rem;
+    }
+
+    #sobre .container .title .caixa{
+        margin-top: 100px;
+        height: 470px;
+    }
+
+    #sobre .container .title h2 p{
+        font-size: 0.90rem;
+        letter-spacing: 1px;
+    }
+
+    /* Formação */
+
+    #formacao .container .title{
+        height: 75vh;
+        margin-top: 105px;
+        padding: 0 90px;
+        margin-left: 200px;
+        background-color: #000000c5;  
+        border-radius: 10%;  
+    }
+    
+    #formacao .container .title ul li, p{ /* Estilizando Escritas */
+        font-size: 15px;
+    }
+
+    /* portifólio */
+    
+    #port .container .card{
+        margin-left: 375px;
+    }
+    
+    #port .container .desc{ /* Estilizando caixa de descrição */
+        width: 220px;
+        height: 130px;
+        position: relative;
+        margin-left: 30px;    
+        left: 535px;
+        top: -260px;
+        background-color: #000000bd;
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    #port .container .desc p{
+        font-size: 0.8rem;
+        margin-top: 15px;
+    }
+
+    /* contato */
+
+    #cont .content-contact .contact-left h1{
+        font-size: 1.75rem;
+    }
+
+    #cont .content-contact .contact-left .linha{
+        width: 215px;
+        margin-top: 4px;
+        margin-bottom: 16.5px;
+    }
+
+    #cont .content-contact .contact-left ion-icon{
+        font-size: 1.3rem;
+        padding: 5px 0;
+    }
+    #cont .content-contact .contact-left span{
+        font-size: 1rem;
+        padding: 5px 0;
+        margin-bottom: 10px;
+    }
+
+    #cont .content-contact .contact-right h1{
+        font-size: 1.75rem;
+        text-transform: uppercase;    
+        color: rgb(209, 245, 48);
+    }
+    
+    #cont .content-contact .contact-right .linha{
+        width: 355px;
+        margin-top: 4px;
+        margin-bottom: 16.5px;
+    }
+    
+    
+    #cont .content-contact .contact-right input[type=email],
+    #cont .content-contact .contact-right input[type=text]{
+        margin-bottom: 20px;
+        font-size: 0.85rem;
+    }
+    
+    #cont .content-contact .contact-right textarea{
+        height:110px;
+        font-size: 0.85rem;
+    }
+}
